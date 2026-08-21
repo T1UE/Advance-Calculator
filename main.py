@@ -2,7 +2,7 @@ from colorama import Fore
 import time
 import ctypes
 import references
-from codes import Codex
+from Basic.basic_parse import Codex
 
 #colours
 RED = Fore.RED
