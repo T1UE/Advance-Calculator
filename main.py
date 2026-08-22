@@ -3,6 +3,7 @@ import time
 import ctypes
 import references
 from Basic.basic_parse import Codex
+from Basic.basic_parse import Parser
 
 #colours
 RED = Fore.RED
@@ -32,29 +33,21 @@ def style():
         print(f"{WHITE}")
   
 def Basic_Calculations():
-    values = []
     print(references.basic_calculations)
     print("Calculate --> ", end="")
-    calc = input()
-    calc_str = str(calc)
-    for i in range(len(calc_str)):
-        if calc_str[i] in Codex:
-            values.append(Codex[calc_str[i]])
-    print(values)
-    
-    # if type(calc) == str:
-    #     print(f"{RED}Invalid Input!")
-    # else:
-    #     try:
-    #         cal = int(calc)
+    calc = str(input())
+    expression = calc.translate(Codex)
+    result = Parser(calc, expression)
+    print(result)
 
     
     print(f"{WHITE}")
-def main():
-    style()
-    choice = int(input())
-    if choice == 1:
-        Basic_Calculations()
+Basic_Calculations()
+# def main():
+#     style()
+#     choice = int(input())
+#     if choice == 1:
+#         Basic_Calculations()
         
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
