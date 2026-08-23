@@ -5,6 +5,7 @@ import references
 from Basic.basic_parse import Codex
 from Basic.basic_parse import Parser
 
+
 #colours
 RED = Fore.RED
 BLUE = Fore.BLUE
@@ -42,7 +43,11 @@ def Basic_Calculations():
 
     
     print(f"{WHITE}")
-Basic_Calculations()
+# Basic_Calculations()
+def Graphing_Engine():
+    pass
+
+
 # def main():
 #     style()
 #     choice = int(input())
