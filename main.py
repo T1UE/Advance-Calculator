@@ -53,6 +53,5 @@ def main():
      choice = int(input())
      if choice == 1:
          Basic_Calculations()
-        
- if __name__ == "__main__":
+if __name__ == "__main__":
      main()
