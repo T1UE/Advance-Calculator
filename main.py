@@ -48,11 +48,11 @@ def Graphing_Engine():
     pass
 
 
-# def main():
-#     style()
-#     choice = int(input())
-#     if choice == 1:
-#         Basic_Calculations()
+def main():
+     style()
+     choice = int(input())
+     if choice == 1:
+         Basic_Calculations()
         
-# if __name__ == "__main__":
-#     main()
+ if __name__ == "__main__":
+     main()
