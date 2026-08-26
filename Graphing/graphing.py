@@ -4,6 +4,7 @@ import matplotlib.pyplot as matplt
 import os
 
 def parser():
+    pass
 
 def CLI_VIEW(expression):
     x = np.linspace(0, 5, 1000)
