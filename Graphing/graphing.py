@@ -19,9 +19,9 @@ def GUI_VIEW():
     matplt.plot(x, y)
     matplt.grid()
     #matplt.show()
-    images = os.listdir("Graphing/Images")
+    #images = os.listdir("Graphing/Images")
     #print(images)
-    count = len(images)
+    #count = len(images)
     image_name = input("Enter File Name to be Saved (default : image.png) ")
     if len(image_name) == 0:
         matplt.savefig(f"Graphing/Images/image{count+1}.png", dpi = 300)
